@@ -37,7 +37,72 @@
     </header>
     
     <main>
-
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="text black">Calcola il tuo biglietto del treno</h2>
+            <form id="form-input">
+              <div class="d-flex justify-content-center justify-content-between ps-5 pe-5">
+                <div>
+                  <div class="mb-2">Nome Cognome</div>
+                  <input class="form-control" id="user-date" type="text " value="Antonino Musarra">
+                </div>
+                <div>
+                  <div class="mb-2">Km da percorrere</div>
+                  <input class="form-control" id="trip-distance" type="text" value="100">
+                </div>
+                <div>
+                  <div class="mb-2">Fascia d'età</div>
+                  <select class="form-select w-30" id="age-range" aria-label="Default select example">
+                    <option value="maggiorenne">Maggiorenne</option>
+                    <option value="minorenne">Minorenne</option>
+                    <option value="over65">Over 65</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mt-4">
+                <button class="btn btn-light" id="generate-btn">Genera</button>
+                <button class="btn btn-light">Annulla</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row text-center">
+          <h2 class="text black">Il tuo biglietto</h2>
+          <div class="col-12 text-center">
+            <div class="card w-100 mb-3">
+              <div class="row g-0">
+                <div class="col-4">
+                  <h2 class="fw-bold">NOME PASSEGGERO</h2>
+                  <div id="user-info"></div>
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">DETTAGLI BIGLIETTO</h5>
+                    <div class="row">
+                      <div class="col-3">
+                        <div class="fw-bold">OFFERTA</div>
+                        <div id="ticket-plane"></div>
+                      </div>
+                      <div class="col-3">
+                        <div class="fw-bold">SCONTO APPLICATO</div>
+                        <div id="ticket-discount"></div>
+                      </div>
+                      <div class="col-3">
+                        <div class="fw-bold">KM TOT</div>
+                        <div id="ticket-trip-distance"></div>
+                      </div>
+                      <div class="col-3">
+                        <div class="fw-bold">COSTO BIGLIETTO</div>
+                        <div id="ticket-final-price"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>            
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer></footer>
